@@ -1,0 +1,11 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over browser:
+In this case, the browser sends only one request to the server.
+This contains the new note as JSON data
+end note
+
+server-->browser: status 201
+note over server:
+server responds with status code 201 Created. This time, the server does not request a redirect,
+the browser remains on the same page and does not send any more HTTP requests.
+end note
